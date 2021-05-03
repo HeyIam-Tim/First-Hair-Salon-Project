@@ -8,8 +8,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <!-- <link rel="stylesheet" href="/static/css/style.css/"> -->
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+    <link rel="stylesheet" href="/static/css/style.css/">
 </head>
 <body>
     <div class="container">
@@ -21,6 +21,8 @@
         {% endblock content %}
 
     </div>
+    {% include 'main_app/footer.html' %}
+
 </body>
 </html>
 
