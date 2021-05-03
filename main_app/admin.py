@@ -7,4 +7,3 @@ admin.site.register(WomanService)
 admin.site.register(KidService)
 
 
-
