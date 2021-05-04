@@ -1,10 +1,10 @@
 # pylint: disable=E1101
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
-from .models import WomanService
+from .models import WomanService, ImageTest
 from .serializers import WomanServiceSerializer
 
 
@@ -22,6 +22,7 @@ class WomenPageAPI(APIView):
         serializer = WomanServiceSerializer(women_services, many=True)
         return Response(serializer.data)
 
+
 class MenPage(TemplateView):
     template_name = 'main_app/men.html'
 
@@ -31,3 +32,8 @@ class KidsPage(TemplateView):
 
 
 
+class ImageTestView(ListView):
+    model = ImageTest
+    template_name = 'main_app/image.html'
+    context_object_name = 'images'
+    

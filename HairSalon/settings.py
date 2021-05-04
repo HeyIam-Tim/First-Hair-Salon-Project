@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 from decouple import config, Csv
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -38,10 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+
+    'cloudinary_storage', 
     'django.contrib.staticfiles',
 
     'main_app.apps.MainAppConfig',
     'rest_framework',
+    'cloudinary',
     
 
 ]
@@ -128,12 +134,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
+# STATIC_URL = '/hairsalon_static/'
 
-STATICFILES_DIRS = [ BASE_DIR / 'static', ]
+# STATICFILES_DIRS = [ BASE_DIR / 'hairsalon_static', ]
 
-MEDIA_URL = '/images/'
+# MEDIA_URL = '/images/'
 
-MEDIA_ROOT = BASE_DIR / 'static/images'
+# MEDIA_ROOT = BASE_DIR / 'static/images'
+
+
+
+# cloudinary
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+
+
+
 
 

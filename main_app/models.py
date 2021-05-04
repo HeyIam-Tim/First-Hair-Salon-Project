@@ -1,4 +1,5 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 
 class ManService(models.Model):
@@ -31,4 +32,11 @@ class KidService(models.Model):
         return self.service_type
 
 
+
+class ImageTest(models.Model):
+    image = CloudinaryField('image')
+    name = models.CharField(blank=True, null=True, max_length=255)
+
+    def __str__(self):
+        return self.name
 

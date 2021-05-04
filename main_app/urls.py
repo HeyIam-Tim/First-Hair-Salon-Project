@@ -7,6 +7,7 @@ urlpatterns = [
     path('women_api/', views.WomenPageAPI.as_view(), name='women_api'),
     path('men/', views.MenPage.as_view(), name='men'),
     path('kids/', views.KidsPage.as_view(), name='kids'),
+    path('test/', views.ImageTestView.as_view(), name='test'),
 ]
 
 
