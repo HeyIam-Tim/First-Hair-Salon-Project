@@ -34,7 +34,7 @@ class KidService(models.Model):
 
 
 class ImageTest(models.Model):
-    image = CloudinaryField('image')
+    cloud_image = models.ImageField(blank=True, null=True)
     name = models.CharField(blank=True, null=True, max_length=255)
 
     def __str__(self):

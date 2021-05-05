@@ -1,5 +1,7 @@
 {% load cloudinary %}
 {% for image in images %}
     {{image.name}}
-    <img src="{{image.image.url}}" alt="image">
+    <img src="{{image.cloud_image.url}}" alt="image">
 {% endfor %}
+
+

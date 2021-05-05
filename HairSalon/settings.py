@@ -41,15 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-
-    'cloudinary_storage', 
     'django.contrib.staticfiles',
 
     'main_app.apps.MainAppConfig',
     'rest_framework',
     'cloudinary',
-    
-
 ]
 
 MIDDLEWARE = [
@@ -134,20 +130,21 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-# STATIC_URL = '/static/'
-# STATIC_URL = '/hairsalon_static/'
+STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = [ BASE_DIR / 'hairsalon_static', ]
+STATICFILES_DIRS = [ BASE_DIR / 'static', ]
 
-# MEDIA_URL = '/images/'
-
-# MEDIA_ROOT = BASE_DIR / 'static/images'
-
+MEDIA_URL = '/hairsalon_images/'
 
 
 # cloudinary
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': config('CLOUD_NAME'),
+    'API_KEY': config('API_KEY'), 
+    'API_SECRET': config('API_SECRET'),
+}
 
 
 
