@@ -33,10 +33,5 @@ class KidService(models.Model):
 
 
 
-class ImageTest(models.Model):
-    cloud_image = models.ImageField(blank=True, null=True)
-    name = models.CharField(blank=True, null=True, max_length=255)
 
-    def __str__(self):
-        return self.name
 

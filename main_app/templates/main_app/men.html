@@ -1,8 +1,14 @@
 {% extends 'main_app/base.html' %}
 {% load static %}
-{% block title %}Women{% endblock title %}
+{% block title %}Мужские{% endblock title %}
 {% block content %}
-    <h1>men</h1>
+    <section class="services">
+        <div class="grid" id="men_services">
+            <!-- cards with men's services go in here -->
+        </div>
+
+        <script src="{% static 'js/men.js' %}"></script>
+    </section>
 
 {% endblock content %}
 

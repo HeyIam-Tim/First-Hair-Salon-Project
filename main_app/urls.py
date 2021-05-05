@@ -6,8 +6,9 @@ urlpatterns = [
     path('women/', views.WomenPage.as_view(), name='women'),
     path('women_api/', views.WomenPageAPI.as_view(), name='women_api'),
     path('men/', views.MenPage.as_view(), name='men'),
+    path('men_api/', views.MenPageAPI.as_view(), name='men_api'),
     path('kids/', views.KidsPage.as_view(), name='kids'),
-    path('test/', views.ImageTestView.as_view(), name='test'),
+    path('kids_api/', views.KidsPageAPI.as_view(), name='kids_api'),
 ]
 
 
