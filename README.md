@@ -5,7 +5,6 @@
 
 A website that I built for my local hair salon. I love that salon :). They didn't have a website before and now they have one.
 <br><br>
-
 The link: https://first-hair-salon.herokuapp.com/
 <br><br>
 Used techologies: Django, HTML, SASS, Vanilla JavaScript, Django REST Framework, Cloudinary, Postgres, Heroku.
@@ -20,6 +19,7 @@ Used techologies: Django, HTML, SASS, Vanilla JavaScript, Django REST Framework,
 
 The link: https://first-hair-salon.herokuapp.com/
 
+Twitter: https://twitter.com/Timirlan94?s=09
 
 
 
