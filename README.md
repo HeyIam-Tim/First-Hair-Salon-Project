@@ -16,6 +16,8 @@ Used techologies: Django, HTML, SASS, Vanilla JavaScript, Django REST Framework,
 ## A page for each category.
 <img alt='detial page.' src="https://github.com/HeyIam-Tim/First-Hair-Salon-Project/blob/master/static/images/detial.png">
 <br><br><br>
+<img alt='detial page.' src="https://github.com/HeyIam-Tim/First-Hair-Salon-Project/blob/master/static/images/menpage.png">
+<br><br><br>
 
 The link: https://first-hair-salon.herokuapp.com/
 
